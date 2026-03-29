@@ -1,7 +1,12 @@
 {
   "name": "foliou",
-  "version": "1.0.32",
-  "description": "",
+  "version": "1.0.33",
+  "description": "Frontend component collection",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/focusbe/foliou.git",
+    "directory": "packages/foliou"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
