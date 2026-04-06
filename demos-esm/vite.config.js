@@ -8,7 +8,7 @@ export default defineConfig({
   root: './src',
   resolve: {
     alias: {
-      'foliou': path.resolve(__dirname, '../libs/foliou')
+      'foliou': path.resolve(__dirname, './libs/foliou')
     }
   },
   server: {
