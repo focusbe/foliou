@@ -8,12 +8,8 @@ export default defineConfig({
   root: './src',
   resolve: {
     alias: {
-      'foliou': path.resolve(__dirname, '../packages/foliou/dist/esm'),
-      'jquery': path.resolve(__dirname, 'node_modules/jquery/dist/jquery.js')
+      'foliou': path.resolve(__dirname, '../libs/foliou')
     }
-  },
-  optimizeDeps: {
-    include: ['jquery']
   },
   server: {
     port: 5173,
