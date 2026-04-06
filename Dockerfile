@@ -1,3 +1,8 @@
-FROM nginx:alpine
-COPY demos/src/ /usr/share/nginx/html/
-EXPOSE 80
+FROM node:18-alpine
+WORKDIR /app
+COPY demos-esm/package*.json ./
+RUN npm install
+COPY demos-esm/ .
+RUN npm run build
+EXPOSE 3001
+CMD ["node", "server.js"]

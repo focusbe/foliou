@@ -1,0 +1,18 @@
+{
+  "name": "foliou-demos",
+  "version": "1.0.0",
+  "description": "Foliou component demos",
+  "main": "server.js",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "vite build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "jquery": "^1.12.4"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

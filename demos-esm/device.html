@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Device Demo</title>
+</head>
+<body>
+  <h1>Device Demo</h1>
+  <div id="result"></div>
+  <script type="module">
+    import Device from './node_modules/foliou/dist/esm/device/index.js';
+    document.getElementById('result').innerHTML = `
+      <p>isMobile: ${Device.isMobile}</p>
+      <p>isiOS: ${Device.isiOS}</p>
+      <p>isAndroid: ${Device.isAndroid}</p>
+      <p>isWeixin: ${Device.isWeixin}</p>
+    `;
+  </script>
+</body>
+</html>
