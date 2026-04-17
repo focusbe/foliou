@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>背景音乐</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>背景音乐</title>
 </head>
-
 <body>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
-	<script src="./js/bgm.js" entry="true"></script>
-	<script>
-		requirejs(["jquery", "foliou/bgm/index"], function ($, BGM) {
-			var bgm = new BGM({
-				file: "http://www.ztgame.com/act/30th/sound/bg.mp3",
-				onpause: function () {
-					//alert("pause");
-				},
-				onplay: function () {
-					//alert("play");
-				}
-			});
-		});
-	</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./libs/foliou/device/index.js"></script>
+    <script src="./libs/foliou/prefix/index.js"></script>
+    <script src="./libs/foliou/bgm/index.js"></script>
+    <script>
+        var bgm = new Bgm({
+            file: "http://www.ztgame.com/act/30th/sound/bg.mp3",
+            onpause: function () { console.log("pause"); },
+            onplay: function () { console.log("play"); }
+        });
+    </script>
 </body>
-
 </html>

@@ -3,6 +3,14 @@
   "version": "1.0.33",
   "description": "Frontend component collection",
   "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "files": [
+    "dist/esm/**",
+    "package.json",
+    "README.md"
+  ],
   "main": "./dist/esm/index.js",
   "module": "./dist/esm/index.js",
   "exports": {

@@ -76,10 +76,25 @@ async function buildComponent(name) {
   }
 }
 
+function generateBarrelIndex() {
+  const esmDir = path.join(process.cwd(), 'dist', 'esm');
+  const lines = components.map(name => {
+    const exportName = name.charAt(0).toUpperCase() + name.slice(1);
+    return `export { default as ${exportName} } from './${name}/index.js';`;
+  });
+  fs.writeFileSync(path.join(esmDir, 'index.js'), lines.join('\n') + '\n');
+  console.log('Generated: dist/esm/index.js');
+}
+
 async function main() {
+  const esmDir = path.join(process.cwd(), 'dist', 'esm');
+  await fs.ensureDir(esmDir);
+
   for (const comp of components) {
     await buildComponent(comp);
   }
+
+  generateBarrelIndex();
   console.log('\nAll ESM builds complete!');
 }
 

@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  root: './src',
+  root: '.',
   resolve: {
     alias: {
       './libs/foliou': path.resolve(__dirname, './libs/foliou')
@@ -16,7 +16,7 @@ export default defineConfig({
     host: true
   },
   build: {
-    outDir: '../dist',
+    outDir: 'dist',
     emptyOutDir: true
   }
 });

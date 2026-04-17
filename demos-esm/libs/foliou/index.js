@@ -1,11 +1,11 @@
 export { default as Device } from './device/index.js';
-export { default as Bgm } from './bgm/index.js';
+export { default as Prefix } from './prefix/index.js';
+export { default as Utli } from './utli/index.js';
+export { default as Trace } from './trace/index.js';
+export { default as Touch } from './touch/index.js';
 export { default as Animate } from './animate/index.js';
 export { default as Popup } from './popup/index.js';
-export { default as Prefix } from './prefix/index.js';
-export { default as Swiper } from './swiper/index.js';
-export { default as Touch } from './touch/index.js';
-export { default as Trace } from './trace/index.js';
-export { default as Utli } from './utli/index.js';
+export { default as Bgm } from './bgm/index.js';
 export { default as Visualizer } from './visualizer/index.js';
+export { default as Swiper } from './swiper/index.js';
 export { default as Player } from './player/index.js';

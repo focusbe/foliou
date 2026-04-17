@@ -1,4 +1,4 @@
-import BGM from 'foliou/bgm/index.js';
+import BGM from '../libs/foliou/bgm/index.js';
 
 const bgm = new BGM({
   file: "http://www.ztgame.com/act/30th/sound/bg.mp3",
