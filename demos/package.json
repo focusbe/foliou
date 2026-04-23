@@ -58,7 +58,7 @@
 	"dependencies": {
 		"foliou": "^1.0.30",
 		"gulp-clean-css": "^4.2.0",
-		"jquery": "1"
+		"jquery": "3"
 	},
 	"browserslist": "last 3 versions,ie >= 8"
 }
